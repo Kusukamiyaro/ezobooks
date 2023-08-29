@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    word-break: break-all;
+}
+
+
+/* Responsive styles */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .item {
+        width: 15vw;
+        height: 45vh;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item img {
+        width: 14vw;
+        height: 40vh;
+    }
+
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .item {
+        width: 15vw;
+        height: 30vh;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item img {
+        width: 14vw;
+        height: 25vh;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .item {
+        width: 15vw;
+        height: 45vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .item img {
+        width: 14vw;
+        height: 40vh;
+    }
+
+}
