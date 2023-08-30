@@ -1,27 +1,29 @@
-<nav class="bground-purple">
-    <a class="float-left" href="/html/">
-       <i class="fa fa-bars"></i>
-    </a> 
-    <a class="float-left font">Shine</a>
-    <a class="float-right" href="/html/">
-        <i class="fa fa-search"></i>
-     </a> 
-     <a class="float-right" href="/html/">
-        <i class="fa fa-sliders"></i>
-     </a> 
+<div class="container">
+    <nav class="bground-purple">
+        <a class="float-left" href="javascript:void(0)">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="float-left ">Shine</a>
+        <a class="float-right" href="javascript:void(0)">
+            <i class="fa fa-search"></i>
+        </a>
+        <a class="float-right" href="javascript:void(0)">
+            <i class="fa fa-sliders"></i>
+        </a>
 
-</nav>
-<div class="item-list">
-    <ng-container *ngIf="items && items.length>0">
-        <ng-container *ngFor="let item of items" >
-            <app-item [item]="item"></app-item>
+    </nav>
+    <div class="row item-list">
+        <ng-container *ngIf="items && items.length>0">
+            <ng-container *ngFor="let item of items">
+                <app-item [item]="item"></app-item>
+            </ng-container>
         </ng-container>
-    </ng-container>
-    <div *ngIf="items && items.length===0" >
-       <h4>No Content to show</h4>
-    </div>
-    
+        <div *ngIf="items && items.length===0">
+            <h4>No Content to show</h4>
+        </div>
 
-    
-    
+
+
+
+    </div>
 </div>

@@ -1,24 +1,22 @@
 .float-left {
     float: left;
-    padding: 10px;
+    
+    padding: 11px;
 
     
 }
 .float-right{
    float: right;
-   padding: 10px;
+   
+   padding: 11px;
 
 }
-.bground-purple{
-    background-color: blueviolet;
-    color: white;
-    height: 40px;
-}
+
 .fa {
     color: white;
 }
 .font{
-    font-size: 26px;
+    font-size: 2rem;
     padding: 6px;
 
 }
